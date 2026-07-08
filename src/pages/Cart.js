@@ -5,6 +5,8 @@ const Cart = () => {
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
+  const total = items.reduce((sum, item) => sum + item.price, 0)
+
   return (
     <div className="p-6">
       <h1 className="text-center text-4xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
@@ -35,11 +37,19 @@ const Cart = () => {
               </button>
             </div>
           ))}
+
+          {/* Total Price */}
+          <div className="border rounded-lg p-4 mt-4 shadow-md bg-gray-50">
+            <h3 className="text-2xl font-bold text-right text-green-600">
+              Total: ${total.toFixed(2)}
+            </h3>
+          </div>
+
           <button
             onClick={() => dispatch(clearCart())}
             className="bg-red-700 text-white px-6 py-2 rounded-lg mt-4"
           >
-            Clear Cart
+            Clear Cart 🗑️
           </button>
         </div>
       )}

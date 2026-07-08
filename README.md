@@ -1,5 +1,4 @@
-My Mart App
-
+shopping-app
 A responsive e-commerce web application built using React.js, Redux Toolkit, and Tailwind CSS.
 
 Features:
