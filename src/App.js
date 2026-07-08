@@ -8,7 +8,7 @@ import Profile from "./pages/Profile";
 import ProductDetail from "./pages/ProductDetail";
 
 const App = () => {
-  const user = { id: 1, name: "Muteeb", age: 21, city: "Narang Mandi" };
+  const user = { id: 1, name: "Muteeb Asif", age: 23, city: "Narang Mandi", hobby: "Cricket" };
 
   return (
     <UserContext.Provider value={user}>
