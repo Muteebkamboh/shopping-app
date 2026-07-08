@@ -5,9 +5,9 @@ const Profile = () => {
   const user = useContext(userContext);
 
   return (
-    <div className="h-screen overflow-hidden bg-gray-100 flex items-center justify-center p-4">
+    <div className="bg-gray-100 flex items-center justify-center p-4" style={{height: 'calc(100vh - 64px)'}}>
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
-        {/* Avatar */}
+        
         <div className="flex justify-center mb-6">
           <img 
     src="https://avatars.githubusercontent.com/Muteebkamboh" 
@@ -16,12 +16,10 @@ const Profile = () => {
 />
         </div>
 
-        {/* Name */}
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           {user.name}
         </h1>
 
-        {/* Info Cards */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4 bg-blue-50 p-4 rounded-xl">
             <span className="text-2xl">🎂</span>

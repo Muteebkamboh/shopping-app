@@ -37,8 +37,7 @@ const Cart = () => {
               </button>
             </div>
           ))}
-
-          {/* Total Price */}
+          
           <div className="border rounded-lg p-4 mt-4 shadow-md bg-gray-50">
             <h3 className="text-2xl font-bold text-right text-green-600">
               Total: ${total.toFixed(2)}
